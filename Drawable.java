@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//A+ Computer Science  -  www.apluscompsci.com
 //Name -  
 //Date -
 //Class -
@@ -24,67 +24,64 @@ public abstract class Drawable implements Locatable
 
 	public Drawable(int x, int y)
 	{
-
-
-
+  xPos = x;
+  yPos = y;
+  width = 5;
+  height = 5;
 	}
 
 	public Drawable(int x, int y, int w, int h)
 	{
-
-
-
+  xPos = x;
+  yPos = y;
+  width = w;
+  height = h;
 	}
 
 	public void setPos(int x, int y)
 	{
-
-
-
+    xPos = x;
+    yPos = y;
 	}
 	
 	public void setX( int x )
 	{
-
-
+    xPos = x;
 	}
 	
 	public void setY( int y )
 	{
-
-
+    yPos = y;
 	}
 
 	public void setWidth(int w)
 	{
-
-
+    width = w;
 	}
 	
 	public void setHeight(int h)
 	{
-
-
+    height = h;
 	}
 	
 	public int getX()
 	{
-		return 0;
+		return xPos;
 	}
 	
 	public int getY()
 	{
-		return 0;
+		return yPos;
 	}	
 
 	public int getWidth()
 	{
-		return 0;
+		return width;
 	}	
 	
 	public int getHeight()
 	{
-		return 0;
+		return height;
 	}
 	
 	public abstract void draw(Graphics window);
